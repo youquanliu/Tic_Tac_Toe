@@ -1,7 +1,7 @@
 var turn = document.getElementById("turn"),
 
     // boxes => all boxes
-    boxes = document.querySelectorAll("#main div"),
+    boxes = document.querySelectorAll(".box div"),
 
     // X_or_O => to set X or O into the box
     X_or_O = 0;
@@ -10,8 +10,8 @@ function selectWinnerBoxes(b1, b2, b3) {
     b1.classList.add("win");
     b2.classList.add("win");
     b3.classList.add("win");
-    turn.innerHTML = b1.innerHTML + " Won Congrat";
-    turn.style.fontSize = "40px";
+    turn.innerHTML = b1.innerHTML + " Won Congratulations!!";
+    turn.style.fontSize = "30px";
 }
 
 function getWinner() {
